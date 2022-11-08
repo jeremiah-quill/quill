@@ -3,7 +3,7 @@ import HighlightedText from "../components/HighlightedText";
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex justify-center items-center flex-col max-w-4xl mx-auto gap-8">
+    <div className="w-full h-full flex justify-center items-center flex-col max-w-4xl mx-auto gap-8 ">
       <Head>
         <title>QUILL - just another React UI library</title>
         <meta name="description" content="Just another React UI library" />
