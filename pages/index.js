@@ -1,8 +1,9 @@
 import Head from "next/head";
+import HighlightedText from "../components/HighlightedText";
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div className="w-full h-full flex justify-center items-center flex-col max-w-4xl mx-auto gap-8">
       <Head>
         <title>QUILL - just another React UI library</title>
         <meta name="description" content="Just another React UI library" />
@@ -21,6 +22,11 @@ export default function Home() {
         </span>
         LL
       </h1>
+      <HighlightedText
+        text="Just another React UI library"
+        classNames={"text-3xl cursor-pointer font-[dynapuff]"}
+        fadeOutTime={"5000"}
+      />
     </div>
   );
 }
