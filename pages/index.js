@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HighlightedText from "../components/HighlightedText";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,17 +16,22 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className="text-5xl font-[dynapuff] group cursor-pointer">
-        Q
-        <span className="group-hover:text-[dodgerblue] group-hover:font-extrabold transition-all">
-          UI
-        </span>
-        LL
-      </h1>
+      <Link href="/features">
+        {/* <a> */}
+        <h1 className="text-5xl font-[dynapuff] group cursor-pointer">
+          Q
+          <span className="group-hover:text-[dodgerblue] group-hover:font-extrabold transition-all">
+            UI
+          </span>
+          LL
+        </h1>
+        {/* </a> */}
+      </Link>
       <HighlightedText
         text="Just another React UI library"
         classNames={"text-3xl cursor-pointer font-[dynapuff]"}
         fadeOutTime={"5000"}
+        colors={[]}
       />
     </div>
   );
