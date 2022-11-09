@@ -10,4 +10,5 @@ body,
 
 body {
   background-color: #fffbeb;
+  overscroll-behavior-y: none;
 }

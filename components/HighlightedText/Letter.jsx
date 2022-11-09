@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Letter({
   children,
   fadeOutTime = 5000,
-  primaryColor = "white",
+  primaryColor = "black",
   colors = ["blue", "green", "yellow", "red", "orange", "purple", "pink", "indigo"],
 }) {
   const [isHighlighted, setIsHighlighted] = useState(false);

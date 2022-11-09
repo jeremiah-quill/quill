@@ -2,7 +2,7 @@ import HighlightedText from "../../components/HighlightedText";
 import { useState } from "react";
 import uuid from "react-uuid";
 
-export default function features() {
+export default function FeaturesPage() {
   const [fadeOutTime, setFadeOutTime] = useState(10000);
   const [colors, setColors] = useState([
     { color: "#3b82f6", id: uuid() },
@@ -32,7 +32,7 @@ export default function features() {
       <div className="mx-auto max-w-5xl grid gap-8">
         <div className="grid gap-4">
           <div>
-            <h1 className="text-white mb-2">Array of Colors Applied on Hover: </h1>
+            <h1 className="text-white mb-2">Choose color palette: </h1>
             <ul className="flex gap-4 items-center">
               {colors.map((color) => (
                 <li className="flex flex-col justify-center items-center" key={color.id}>
@@ -56,7 +56,7 @@ export default function features() {
           </div>
           <div className="">
             <label className="text-white mb-2 block" htmlFor="fade-duration">
-              Fade Duration: {fadeOutTime} ms
+              Apply fade out duration: {fadeOutTime} ms
             </label>
             <input
               type="range"
