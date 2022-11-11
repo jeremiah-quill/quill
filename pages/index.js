@@ -30,7 +30,7 @@ export default function Home() {
   }
   return (
     // <div className="w-full h-full flex justify-center items-center flex-col max-w-4xl mx-auto gap-8 ">
-    <div className="p-16 grid gap-8 bg-black h-full w-full">
+    <div className="p-16 grid gap-8 bg-black min-h-screen w-full">
       <Head>
         <title>QUILL - just another React UI library</title>
         <meta name="description" content="Just another React UI library" />
