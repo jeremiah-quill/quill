@@ -28,7 +28,7 @@ export default function FeaturesPage() {
   }
 
   return (
-    <div className="p-16 grid gap-8 bg-black h-full w-full">
+    <div className="p-16  bg-black h-full w-full">
       <div className="mx-auto max-w-5xl grid gap-8">
         <div className="grid gap-4">
           <div>
@@ -54,7 +54,7 @@ export default function FeaturesPage() {
               </button>
             </ul>
           </div>
-          <div className="">
+          <div>
             <label className="text-white mb-2 block" htmlFor="fade-duration">
               Apply fade out duration: {fadeOutTime} ms
             </label>

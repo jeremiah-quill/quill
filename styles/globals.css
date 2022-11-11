@@ -5,10 +5,11 @@
 html,
 body,
 #__next {
-  height: 100vh;
+  min-height: 100vh;
+  /* background-color: black; */
 }
 
 body {
-  background-color: #fffbeb;
+  /* background-color: #fffbeb; */
   overscroll-behavior-y: none;
 }
