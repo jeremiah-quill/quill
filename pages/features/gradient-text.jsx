@@ -3,26 +3,15 @@ import { useState } from "react";
 import Head from "next/head";
 
 export default function GradientTextPage() {
-  const [fromColor, setFromColor] = useState("#ffffff");
-  const [toColor, setToColor] = useState("#000000");
+  const [fromColor, setFromColor] = useState("#ff4242");
+  const [toColor, setToColor] = useState("#d4c308");
   const [angle, setAngle] = useState(90);
   const [text, setText] = useState(
     "Cillum id aliqua elit est tempor laboris aliquip minim eiusmod magna quis elit. Amet et dolor laboris incididunt veniam. Laboris commodo nisi exercitation sit deserunt mollit qui sunt elit exercitation et."
   );
 
   return (
-    <div className="p-16 bg-black w-full min-h-screen">
-      <Head>
-        <title>QUILL - just another React UI library</title>
-        <meta name="description" content="Just another React UI library" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div className="p-16 w-full min-h-screen">
       <div className="mx-auto max-w-5xl grid gap-8">
         <div>
           <label className="text-white block mb-2" htmlFor="color-start">
@@ -55,7 +44,7 @@ export default function GradientTextPage() {
         </div>
         <div>
           <textarea
-            className="p-4 rounded-md w-full h-[100px]"
+            className="p-4 rounded-md w-full h-[100px] text-slate-800"
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
