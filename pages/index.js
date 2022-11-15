@@ -13,7 +13,7 @@ export default function Home() {
       </h1>
 
       <RolloverText
-        text="Lightweight pieces of UI that make people smile.  Add something unique without sacrificing performance or flexibility. Browse the docs or contribute to the project on GitHub."
+        text="Lightweight components and features that make people smile.  Add something unique without sacrificing performance or flexibility. Browse the docs or contribute to the project on GitHub."
         classNames={"text-xl cursor-pointer font-inter text-center max-w-2xl"}
         fadeOutTime={10000}
         primaryColor="white"
