@@ -9,6 +9,9 @@ export default function FeaturesPage() {
           <li className="text-3xl font-bold hover:bg-blue-700 transition-all px-2 py-1">
             <Link href="/features/rollover-text">Rollover Text</Link>
           </li>
+          <li className="text-3xl font-bold hover:bg-blue-700 transition-all px-2 py-1">
+            <Link href="/features/slider-input">Slider Input</Link>
+          </li>
         </ul>
       </div>
     </div>

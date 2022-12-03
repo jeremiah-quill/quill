@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import "../styles/index.css";
+import "../styles/slider-input.css";
 import Layout from "../components/Layout";
 import Head from "next/head";
 

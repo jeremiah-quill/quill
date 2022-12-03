@@ -1,0 +1,148 @@
+/* Tooltip above slider thumb to display current slider value */
+.custom-slider-value {
+  position: absolute;
+  top: -50px;
+}
+.custom-slider-value span {
+  width: 125px;
+  height: 30px;
+  line-height: 24px;
+  text-align: center;
+  /* background: #02234e; */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 20px;
+}
+.custom-slider-value span:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: -1px;
+}
+
+/* Custom slider styles */
+/* Container */
+.custom-slider-container {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+/* Color to right of slider button */
+.trackUpperFill {
+  position: absolute;
+  width: 100%;
+  height: 12.6px;
+  background: #efeded;
+  border-radius: 25px;
+}
+/* Color to left of slider button */
+.trackLowerFill {
+  position: absolute;
+  height: 12.6px;
+  width: 100%;
+  /* background-color: #02234e; */
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 25px;
+}
+/* Input styles */
+input[type="range"].rangeInput {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 2px 0;
+  vertical-align: middle;
+  position: relative;
+  background-color: transparent;
+}
+input[type="range"].rangeInput:focus {
+  outline: none;
+}
+/* Chrome & Safari */
+input[type="range"].rangeInput::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  border-radius: 0px;
+  z-index: 1;
+}
+input[type="range"].rangeInput::-webkit-slider-thumb {
+  border-radius: 50%;
+  border: 5px solid black;
+  background: #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -22px;
+  position: relative;
+  z-index: 2000;
+  width: 35px;
+  height: 35px;
+}
+/* Firefox */
+input[type="range"].rangeInput::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: none transparent;
+  border-radius: 0px;
+  position: relative;
+  z-index: -1;
+}
+input[type="range"].rangeInput::-moz-range-thumb {
+  background: #fff;
+  border: 5px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+/* IE & Edge */
+input[type="range"].rangeInput::-ms-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"].rangeInput::-ms-fill-lower {
+  background: black;
+  border-radius: 0px;
+}
+input[type="range"].rangeInput::-ms-fill-upper {
+  background: #efeded;
+  border-radius: 0px;
+}
+input[type="range"].rangeInput::-ms-thumb {
+  background: #fff;
+  border: 5px solid black;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 6px;
+  z-index: 2000;
+  position: relative;
+}
+input[type="range"].rangeInput:focus::-ms-fill-lower {
+  background: black;
+}
+input[type="range"].rangeInput:focus::-ms-fill-upper {
+  background: #efeded;
+}
