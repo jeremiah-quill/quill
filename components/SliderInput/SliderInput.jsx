@@ -56,6 +56,12 @@ export function SliderInput({
         style={{ width: `${percentage * 100}%`, backgroundColor: lowerColor }}
         className="trackLowerFill"></div>
       <input
+        style={{
+          "::WebkitSliderThumb": {
+            borderColor: "red",
+            borderWidth: "5px",
+          },
+        }}
         onChange={(e) => handleChange(e)}
         className="rangeInput"
         id="rangeinput"
